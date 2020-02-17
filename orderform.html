@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- CSS -->
+    <style>
+      #form {
+        width: 700px;
+        margin: auto;
+      }
+    </style>
+
+    <title>Order Form</title>
+  </head>
+  <body>
+    <!-- Nav -->
+
+    <nav class="nav">
+      <a class="nav-link active" href="index.html">Home</a>
+      <a class="nav-link" href="orderform.html">Order Form</a>
+      <a class="nav-link" href="orderlist.html">Order List</a>
+    </nav>
+
+    <h1>Order Form</h1>
+
+    <br />
+    <br />
+
+    <form id="form">
+
+      <!-- Name -->
+
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="name"
+          placeholder="First and Last Name"
+        />
+      </div>
+
+       <!-- Instagram Handle -->
+
+       <div class="form-group">
+        <label for="name">Instagram Handle</label>
+        <input
+          type="text"
+          class="form-control"
+          id="instagramhandle"
+          placeholder="Instagram Handle"
+        />
+      </div>
+
+      <!-- Phone Number and Email -->
+
+      <div class="row">
+        <div class="col">
+          <label for="phonenumber">Phone Number</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="(555) 555-5555"
+          />
+        </div>
+        <div class="col">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            placeholder="name@mail.com"
+          />
+        </div>
+      </div>
+
+      <br />
+
+      <!-- Items Checkbox -->
+
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value="item1"
+          id="defaultCheck1"
+        />
+        <label class="form-check-label" for="defaultCheck1">
+          Crewneck Sweatshirt
+        </label>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="images/communityculture.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Crewneck Sweatshirt</h5>
+          <p class="card-text">Butter Soft Cotton</p>
+        </div>
+      </div>
+
+      <br />
+
+      <!-- Sizing Dropdown -->
+
+      <div class="dropdown">
+        <button
+          class="btn btn-secondary dropdown-toggle"
+          type="button"
+          id="dropdownMenuButton"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Size
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">XS</a>
+          <a class="dropdown-item" href="#">S</a>
+          <a class="dropdown-item" href="#">M</a>
+          <a class="dropdown-item" href="#">L</a>
+          <a class="dropdown-item" href="#">XL</a>
+        </div>
+      </div>
+
+      <br/>
+
+      <!-- Quantity -->
+
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <label class="input-group-text" for="inputGroupSelect01">Quantity</label>
+        </div>
+        <select class="custom-select" id="inputGroupSelect01">
+          <option selected>Choose How Many...</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
+
+      <br/>
+
+      <!-- Order Notes -->
+
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Order Notes</label>
+        <textarea class="form-control" id="ordernotes" rows="3"></textarea>
+      </div>
+
+      <br/>
+
+      <!-- Submit Button -->
+
+      <button class="btn btn-primary" type="submit">Submit Order</button>
+
+
+    </form>
+  </body>
+</html>
