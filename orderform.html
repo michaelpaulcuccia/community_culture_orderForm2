@@ -88,6 +88,7 @@
             type="text"
             class="form-control"
             placeholder="(555) 555-5555"
+            id="phone"
           />
         </div>
         <div class="col">
@@ -96,6 +97,7 @@
             type="email"
             class="form-control"
             placeholder="name@mail.com"
+            id="email"
           />
         </div>
       </div>
@@ -109,12 +111,15 @@
           class="form-check-input"
           type="checkbox"
           value="item1"
-          id="defaultCheck1"
+          id="item1check"
+          unchecked
         />
-        <label class="form-check-label" for="defaultCheck1">
+        <label class="form-check-label" for="item1check">
           Crewneck Sweatshirt
         </label>
       </div>
+
+      <!-- Item Card -->
 
       <div class="card" style="width: 18rem;">
         <img src="images/communityculture.png" class="card-img-top" alt="...">
@@ -130,7 +135,7 @@
 
       <div class="dropdown">
         <button
-          class="btn btn-secondary dropdown-toggle"
+          class="btn btn-primary dropdown-toggle"
           type="button"
           id="dropdownMenuButton"
           data-toggle="dropdown"
@@ -140,11 +145,11 @@
           Size
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#">XS</a>
-          <a class="dropdown-item" href="#">S</a>
-          <a class="dropdown-item" href="#">M</a>
-          <a class="dropdown-item" href="#">L</a>
-          <a class="dropdown-item" href="#">XL</a>
+          <a class="dropdown-item" value="XS" href="#">XS</a>
+          <a class="dropdown-item" value="S" href="#">S</a>
+          <a class="dropdown-item" value="M" href="#">M</a>
+          <a class="dropdown-item" value="L" href="#">L</a>
+          <a class="dropdown-item" value="XL" href="#">XL</a>
         </div>
       </div>
 
@@ -154,9 +159,11 @@
 
       <div class="input-group mb-3">
         <div class="input-group-prepend">
-          <label class="input-group-text" for="inputGroupSelect01">Quantity</label>
+          <label class="input-group-text" 
+          id="quantity1"
+          for="quantity1">Quantity</label>
         </div>
-        <select class="custom-select" id="inputGroupSelect01">
+        <select class="custom-select" id="quantity1select">
           <option selected>Choose How Many...</option>
           <option value="1">One</option>
           <option value="2">Two</option>
@@ -170,7 +177,9 @@
 
       <div class="form-group">
         <label for="exampleFormControlTextarea1">Order Notes</label>
-        <textarea class="form-control" id="ordernotes" rows="3"></textarea>
+        <textarea class="form-control" 
+        id="ordernotes" 
+        rows="3"></textarea>
       </div>
 
       <br/>
@@ -179,7 +188,12 @@
 
       <button class="btn btn-primary" type="submit">Submit Order</button>
 
+      <br/>
+      <br/>
 
     </form>
+
+    <script src="main.js"></script>
+
   </body>
 </html>
