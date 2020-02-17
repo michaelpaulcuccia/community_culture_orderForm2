@@ -29,7 +29,6 @@
       crossorigin="anonymous"
     ></script>
 
- 
     <!-- CSS -->
     <style>
       #form {
@@ -55,7 +54,6 @@
     <br />
 
     <form id="form">
-
       <!-- Name -->
 
       <div class="form-group">
@@ -68,9 +66,9 @@
         />
       </div>
 
-       <!-- Instagram Handle -->
+      <!-- Instagram Handle -->
 
-       <div class="form-group">
+      <div class="form-group">
         <label for="name">Instagram Handle</label>
         <input
           type="text"
@@ -122,7 +120,7 @@
       <!-- Item Card -->
 
       <div class="card" style="width: 18rem;">
-        <img src="images/communityculture.png" class="card-img-top" alt="...">
+        <img src="images/communityculture.png" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Crewneck Sweatshirt</h5>
           <p class="card-text">Butter Soft Cotton</p>
@@ -144,8 +142,7 @@
         </select>
       </div>
 
-
-      <br/>
+      <br />
 
       <!-- Quantity -->
 
@@ -160,45 +157,42 @@
         </select>
       </div>
 
-      
-      <br/>
+      <br />
 
       <!-- Order Notes -->
 
       <div class="form-group">
         <label for="exampleFormControlTextarea1">Order Notes</label>
-        <textarea class="form-control" 
-        id="ordernotes" 
-        rows="3"></textarea>
+        <textarea class="form-control" id="ordernotes" rows="3"></textarea>
       </div>
 
-      <br/>
+      <br />
 
       <!-- Submit Button -->
 
       <button class="btn btn-primary" type="submit">Submit Order</button>
 
-      <br/>
-      <br/>
-
+      <br />
+      <br />
     </form>
+
+    <!-- Firebase Links -->
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
 
     <script src="main.js"></script>
 
     <script>
-
       // CheckBox
 
       function checkCheck() {
-        if (document.getElementById('item1check').checked) {
-          document.getElementById('item1check').value = true;
+        if (document.getElementById("item1check").checked) {
+          document.getElementById("item1check").value = true;
         } else {
-          document.getElementById('item1check').value = false;
+          document.getElementById("item1check").value = false;
         }
-      }  
-          
+      }
     </script>
     
-
   </body>
 </html>
