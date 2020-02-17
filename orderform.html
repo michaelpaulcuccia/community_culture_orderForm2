@@ -29,6 +29,7 @@
       crossorigin="anonymous"
     ></script>
 
+ 
     <!-- CSS -->
     <style>
       #form {
@@ -110,9 +111,8 @@
         <input
           class="form-check-input"
           type="checkbox"
-          value="item1"
           id="item1check"
-          unchecked
+          onclick="checkCheck()"
         />
         <label class="form-check-label" for="item1check">
           Crewneck Sweatshirt
@@ -133,7 +133,18 @@
 
       <!-- Sizing Dropdown -->
 
-      <div class="dropdown">
+      <div>
+        <label>Select Size</label>
+        <select id="size-select" name="size-select" onchange="sizeSelect()">
+          <option name="XS" value="XS">XS</option>
+          <option name="S" value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+        </select>
+      </div>
+
+      <!-- <div class="dropdown">
         <button
           class="btn btn-primary dropdown-toggle"
           type="button"
@@ -144,20 +155,31 @@
         >
           Size
         </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id='dropmenu'>
           <a class="dropdown-item" value="XS" href="#">XS</a>
           <a class="dropdown-item" value="S" href="#">S</a>
           <a class="dropdown-item" value="M" href="#">M</a>
           <a class="dropdown-item" value="L" href="#">L</a>
           <a class="dropdown-item" value="XL" href="#">XL</a>
         </div>
-      </div>
+      </div> -->
 
       <br/>
 
       <!-- Quantity -->
 
-      <div class="input-group mb-3">
+      <div>
+        <label>Select Quantity</label>
+        <select id="quantity-select" name="quantity-select">
+          <option name="one" value="XS">1</option>
+          <option name="two" value="S">2</option>
+          <option value="three">3</option>
+          <option value="four">4</option>
+          <option value="five">5</option>
+        </select>
+      </div>
+
+      <!-- <div class="input-group mb-3">
         <div class="input-group-prepend">
           <label class="input-group-text" 
           id="quantity1"
@@ -169,7 +191,7 @@
           <option value="2">Two</option>
           <option value="3">Three</option>
         </select>
-      </div>
+      </div> -->
 
       <br/>
 
@@ -194,6 +216,27 @@
     </form>
 
     <script src="main.js"></script>
+
+    <script>
+
+      // CheckBox
+
+      function checkCheck() {
+        if (document.getElementById('item1check').checked) {
+          document.getElementById('item1check').value = true;
+        } else {
+          document.getElementById('item1check').value = false;
+        }
+      }
+
+      //DropBox
+      function sizeSelect() {
+        sizeValue = document.getElementById('size-select').childNodes;
+        console.log(sizeValue);
+      }
+          
+    </script>
+    
 
   </body>
 </html>
