@@ -12,16 +12,11 @@ function submitForm(event){
     var email = getInputVal('email');
     //checkbox - will show 'on', then true or false 
     var item1check = getInputVal('item1check');
-
-    //dropdown - NOT WORKING
-    //var dropdownMenuButton = getInputVal('dropdownMenuButton');
-
-    //quantity - NOTWORKING
-    //var quantity1 = getInputVal('quantity1');
-    
+    var size = getInputVal('size');
+    var quantity = getInputVal('quantity');
     var ordernotes = getInputVal('ordernotes');
 
-    console.log(name, instagramhandle, phone, email, item1check, ordernotes);
+    console.log(name, instagramhandle, phone, email, item1check, size, quantity, ordernotes);
 
 }
 
