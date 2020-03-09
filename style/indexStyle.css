@@ -1,0 +1,18 @@
+.title {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 100px;
+}
+
+#main-image {
+  max-width: 750px;
+  max-height: 750px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+

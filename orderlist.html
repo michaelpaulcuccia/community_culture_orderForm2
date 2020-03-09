@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- jQuery -->
+     <!-- jQuery -->
+     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+     <link rel="stylesheet" href="assets/style.css">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+             crossorigin="anonymous">
+
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -42,9 +50,39 @@
 
     <h1>Order List</h1>
 
+    <div id="order-container">
+      <div class="row">
+        <div class="col-md-12">
+          <!-- Current Orders-->
+          <div class="card mb-4">
+            <div class="card-header">Current Orders</div>
+            <div class="card-body">
+              <table class="table table-sm table-hover" id="order-table">
+                <thead>
+                  <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Instagram Handle</th>
+                    <th scope="col">Phone Number</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Item</th>
+                    <th scope="col">Size</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Notes</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Firebase Links -->
     <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
-    
+
+    <script src="main.js"></script>
+
   </body>
 </html>

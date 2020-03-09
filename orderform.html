@@ -30,16 +30,18 @@
     ></script>
 
     <!-- CSS -->
-    <style>
-      #form {
-        width: 700px;
-        margin: auto;
-      }
-    </style>
+    <link rel="stylesheet" href="style/orderStyle.css" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Order Form</title>
   </head>
   <body>
+
     <!-- Nav -->
 
     <nav class="nav">
@@ -48,7 +50,7 @@
       <a class="nav-link" href="orderlist.html">Order List</a>
     </nav>
 
-    <h1>Order Form</h1>
+    <h1 id="order-title">-- Order Form --</h1>
 
     <br />
     <br />
@@ -113,14 +115,15 @@
           onclick="checkCheck()"
         />
         <label class="form-check-label" for="item1check">
-          Crewneck Sweatshirt
+          Crewneck Sweatshirt<br>
+          <p><i>please check box!</i></p>
         </label>
       </div>
 
       <!-- Item Card -->
 
       <div class="card" style="width: 18rem;">
-        <img src="images/communityculture.png" class="card-img-top" alt="..." />
+        <img src="images/cc6.PNG" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Crewneck Sweatshirt</h5>
           <p class="card-text">Butter Soft Cotton</p>
@@ -193,6 +196,5 @@
         }
       }
     </script>
-    
   </body>
 </html>
