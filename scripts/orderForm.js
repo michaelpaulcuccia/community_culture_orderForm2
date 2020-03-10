@@ -39,6 +39,9 @@ function submitForm(event) {
 
     //save Order
     saveOrder(name, instagramhandle, phone, email, item1check, size, quantity, ordernotes);
+
+    //reset form after submit
+    document.getElementById('form').reset();
 }
 
 //function to get form values
