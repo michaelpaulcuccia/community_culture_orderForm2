@@ -1,6 +1,7 @@
 # community_culture_orderForm2
 
->Community Culture
->Freelance Project for a Local Start-Up Clothing Company.
+https://michaelpaulcuccia.github.io/community_culture_orderForm2/
 
-Order Form Technologies: HTML, CSS, Bootstrap, JavaScript, jQuery, and Google Firebase.
+> Community Culture - Threads and Lifestyle Brand, Edison, NJ
+
+- Technologies: HTML, CSS, Bootstrap, JavaScript, jQuery, and Google Firebase.
